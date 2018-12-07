@@ -4,3 +4,11 @@
 .btn {
   background-color: indianred
 }
+
+img.card-img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
