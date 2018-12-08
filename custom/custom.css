@@ -12,3 +12,7 @@ img.card-img {
   margin-left: auto;
   margin-right: auto;
 }
+
+.card-title {
+  text-align: center;
+}
