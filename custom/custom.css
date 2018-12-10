@@ -16,3 +16,8 @@ img.card-img {
 .card-title {
   text-align: center;
 }
+
+.card:hover
+{
+  border-color: black;
+}
