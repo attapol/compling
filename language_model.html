@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Language Model</title>
+    <title>Language Modeling</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,44 +19,113 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-      <div class="container">
-      </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Language Modeling</li>
+      </ol>
     </nav>
 
-    <!-- Title -->
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-10">
-            <h1>Computational Linguistics</h1>
-            <p class="lead">2209372 & 2209670 ภาษาศาสตร์คอมพิวเตอร์</p>
-            <ul class="list-unstyled">
-              <li>Linguistics Department - Faculty of Arts Chulalongkorn University</li>
-              <li>ภาควิชาภาษาศาสตร์ คณะอักษรศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</li>
-            </ul>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+
+        <div class="col-md-10">
+        <h1>Language Modeling</h1>
+          <p>โมดูลพูดเรื่องการใช้บริบททางภาษาในการตรวจแก้ภาษาที่อาจจะบิดเบือนไปเพราะเสียงของคำฟังคล้ายกัน หรือเขียนผิดไวยากรณ์ หรือสะกดผิด
+          ผู้เรียนควรจะมีพื้นฐานเรื่องความน่าจะเป็น </p>
+          <p>Video List: </p>
+          <ol>
+          	<li><a href = https://youtu.be/IWXADu09SKw> Spell Checker</a></li>
+          	<li><a href = https://youtu.be/PqRN7696870> Edit Distance</a></li>
+          	<li><a href = https://youtu.be/jG01BVPAg10> Minimum Edit Distance</a></li>
+          	<li><a href = https://youtu.be/9YansqDblrs> Spell Checker Summary</a></li>
+          	<li><a href = https://youtu.be/NV_OqAy_Vig> Style Check and Collocations</a></li>
+          	<li><a href = https://youtu.be/qyx23nhc7-4> Pointwise Mutual Information</a></li>
+          	<li><a href = https://youtu.be/ubsVFvT5NEY> PMI Examples</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-8">
+          <h2>Spell checker</h2>
+          <p> วิธีการสร้างระบบตรวจสอบการสะกดผิดขั้นพื้นฐานโดยไม่คำนึงถึงบริบทการเกิดของคำ </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IWXADu09SKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PqRN7696870" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jG01BVPAg10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9YansqDblrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Page Content -->
-    <div class="container">
-	  <div class="row">
-  <h1>Language Modeling</h1>
-  <h2>Week 1 : Spell Checker</h2>
-  <p>Video List:</p>
-  <ol>
-	<li><a href = https://youtu.be/IWXADu09SKw> Spell Checker</a></li>
-	<li><a href = https://youtu.be/PqRN7696870> Edit Distance</a></li>
-	<li><a href = https://youtu.be/jG01BVPAg10> Minimum Edit Distance</a></li>
-	<li><a href = https://youtu.be/9YansqDblrs> Spell Checker Summary</a></li>
-	<li><a href = https://youtu.be/NV_OqAy_Vig> Style Check and Collocations</a></li>
-	<li><a href = https://youtu.be/qyx23nhc7-4> Pointwise Mutual Information</a></li>
-	<li><a href = https://youtu.be/ubsVFvT5NEY> PMI Examples</a></li>
-  </ol>
-      
-    </div>
-		
+      <div class="row mt-4">
+        <div class="col-md-8">
+        <h2> Style Checker </h2>
+        <p> ระบบตรวจแก้การใช้คำผิดที่ ผิดทาง ผิดความหมายโดยการใช้คุณสมบัติทางสถิติของคำ </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NV_OqAy_Vig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qyx23nhc7-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ubsVFvT5NEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-8">
+        <h2>N-Gram Language Model </h2>
+        <p>Technical detail ของการสร้าง Language Model เพื่อนำไปใช้ใน Applications อื่นๆ เช่น
+          text generator, grammar checker, spell checker, speech recognition, machine translation </p>
+        <p>เนื้อหาดัดแปลงมาจาก <a target="_blank" href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">Chapter 3 ของหนังสือ Martin & Jurafsky</a> ซึ่งควรนำมาใช้อ้างอิง </a></p>
+        <p>​<a target="_blank" href="slides/lm.pdf">Slides จาก video</a> | <a target="_blank" href="slides/lm_jurafsky_2017.pdf">Slides จาก Jurafsky</a></p>
+        </div>
+      </div>
+
+
+    <footer class="page-footer font-small">
+      <div class="container">
+        <div class="row">
              <div class="col-md-12 py-3">
                   <div class="flex-center">
                     <hr/>
