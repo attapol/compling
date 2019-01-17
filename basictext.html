@@ -1,12 +1,141 @@
 <html>
+  <head>
 
-  <p><a href="https://goo.gl/forms/4ZB0FHesnpEQOOU52">กรอกรายละเอียดส่วนตัว </a> </p>
-  <p>Basic text processing</p>
-  <p><a href="https://attapol.github.io/programming/code/use_spacy.py">วิธีการใช้ Spacy</a><p>
-  <p><a href="https://colab.research.google.com/drive/1Xo1_vIwXUC8-c1YeI5lqMA_oAbLFbsaK">Python review</a></p>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <p>กิจกรรมฐานที่ 1: <a href="https://docs.google.com/document/d/1Lp7YWA5Zj0ILHfTHIeCC9ckEdTHKXS4a0zLl_v9OLZU/edit?usp=sharing">Install all the things</a></p>
-  <p>กิจกรรมฐานที่ 2: <a href="https://docs.google.com/document/d/1i-uqQUPxoN0lqLLcmYhV9c4_s_LNxKA8a_0FLnYm7kI/edit?usp=sharing">Basic Python</a></p>
-  <p>กิจกรรมฐานที่ 3: <a href="https://docs.google.com/document/d/1W9naQeRZ7LOaydhJs_kc5nsIC-GRiWNMhPnSyNS32z8/edit?usp=sharing">Regular expressions</a></p>
+    <title>NLP Basics and tools</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="custom/custom.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Basics and tools</li>
+      </ol>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+
+    <div class="row">
+
+
+      <div class="col-md-10">
+
+
+      <h1>NLP Basics and tools</h1>
+
+        ทบทวนเครื่องมือต่างๆ ในการประมวลข้อมูลทางภาษาด้วยภาษาไพธอน และ package ต่างที่ช่วยในการตัดคำ ติด pos tag ตัดพยางค์ และวิเคราะห์โครงสร้างประโยค
+        <p>กิจกรรมฐานที่ 1: <a href="https://docs.google.com/document/d/1Lp7YWA5Zj0ILHfTHIeCC9ckEdTHKXS4a0zLl_v9OLZU/edit?usp=sharing">Install all the things</a></p>
+        <p>กิจกรรมฐานที่ 2: <a href="https://colab.research.google.com/drive/1Xo1_vIwXUC8-c1YeI5lqMA_oAbLFbsaK">Python review</a> | <a href="https://colab.research.google.com/drive/1UjlCjzP6T4G4t7rMldDCWf2CaTFKZGIG">Basic Python</a></p>
+        <p>กิจกรรมฐานที่ 3: <a href="https://docs.google.com/document/d/1W9naQeRZ7LOaydhJs_kc5nsIC-GRiWNMhPnSyNS32z8/edit?usp=sharing">Regular expressions</a></p>
+        <p><a href="https://attapol.github.io/programming/code/use_spacy.py">วิธีการใช้ Spacy</a><p>
+
+        <p>Video List: </p>
+        <ol>
+          <li><a href = https://youtu.be/IWXADu09SKw> Spell Checker</a></li>
+          <li><a href = https://youtu.be/PqRN7696870> Edit Distance</a></li>
+          <li><a href = https://youtu.be/jG01BVPAg10> Minimum Edit Distance</a></li>
+          <li><a href = https://youtu.be/9YansqDblrs> Spell Checker Summary</a></li>
+          <li><a href = https://youtu.be/NV_OqAy_Vig> Style Check and Collocations</a></li>
+          <li><a href = https://youtu.be/qyx23nhc7-4> Pointwise Mutual Information</a></li>
+          <li><a href = https://youtu.be/ubsVFvT5NEY> PMI Examples</a></li>
+        </ol>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-8">
+        <h2>Spell checker</h2>
+        <p> วิธีการสร้างระบบตรวจสอบการสะกดผิดขั้นพื้นฐานโดยไม่คำนึงถึงบริบทการเกิดของคำ </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IWXADu09SKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PqRN7696870" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jG01BVPAg10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9YansqDblrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-8">
+      <h2> Style Checker </h2>
+      <p> ระบบตรวจแก้การใช้คำผิดที่ ผิดทาง ผิดความหมายโดยการใช้คุณสมบัติทางสถิติของคำ </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NV_OqAy_Vig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qyx23nhc7-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ubsVFvT5NEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+  <footer class="page-footer font-small">
+    <div class="container">
+      <div class="row">
+           <div class="col-md-12 py-3">
+                <div class="flex-center">
+                  <hr/>
+                </div>
+          </div>
+      </div>
+      <div class="footer-copyright text-right py-3 mb-5">© 2018-2019 Copyright: Attapol Thamrongrattanarit</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="jquery/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
 
   </html>
