@@ -32,11 +32,21 @@
 
       <div class="row">
 
-
-        <div class="col-md-10">
-        <h1>Language Modeling</h1>
-          <p>โมดูลพูดเรื่องการใช้บริบททางภาษาในการตรวจแก้ภาษาที่อาจจะบิดเบือนไปเพราะเสียงของคำฟังคล้ายกัน หรือเขียนผิดไวยากรณ์ หรือสะกดผิด
-          ผู้เรียนควรจะมีพื้นฐานเรื่องความน่าจะเป็น </p>
+        <div class="col-md-8">
+          <h1>Language Modeling</h1>
+          <p>โมดูลนี้พูดเรื่องการใช้บริบททางภาษาในการตรวจแก้ภาษาที่อาจจะบิดเบือนไปเพราะเสียงของคำฟังคล้ายกัน หรือเขียนผิดไวยากรณ์ หรือสะกดผิด
+          </p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/szDRAqtAoWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <br/>
+          <p>เนื้อหาสำหรับอ่านและอ้างอิง</p>
+          <ul>
+            <li><a target="_blank" href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">Chapter 3 ของหนังสือ Martin & Jurafsky</a> </a></li>
+            <li>​<a target="_blank" href="slides/lm.pdf">Slides จาก video</a> | <a target="_blank" href="slides/lm_jurafsky_2017.pdf">Slides จาก Jurafsky</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
           <p>Video List: </p>
           <ol>
           	<li><a href = https://youtu.be/szDRAqtAoWI> Language Model ใช้ทำอะไร</a></li>
@@ -49,83 +59,79 @@
 			<li><a href = https://youtu.be/feuo_fMyTCg> Interpolation และ Backoff</a></li>
 			<li><a href = https://youtu.be/NW1FwKKWLyY> Kneser-Ney LM</a></li>
           </ol>
+          </div>
         </div>
-      </div>
+
 
       <div class="row mt-4">
-        <div class="col-md-8">
+        <div class="col-md-10">
         <h2>N-Gram Language Model </h2>
         <p>Technical detail ของการสร้าง Language Model เพื่อนำไปใช้ใน Applications อื่นๆ เช่น
           text generator, grammar checker, spell checker, speech recognition, machine translation </p>
-        <p>เนื้อหาดัดแปลงมาจาก <a target="_blank" href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">Chapter 3 ของหนังสือ Martin & Jurafsky</a> ซึ่งควรนำมาใช้อ้างอิง </a></p>
-        <p>​<a target="_blank" href="slides/lm.pdf">Slides จาก video</a> | <a target="_blank" href="slides/lm_jurafsky_2017.pdf">Slides จาก Jurafsky</a></p>
+        <p>จำเป็นต้องมีความรู้ความเข้าใจเรื่อง probability และ conditional probability </p>
         </div>
       </div>
-	<div class="row">
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/szDRAqtAoWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	<div class="row">
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QyY2loMlZeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3Oe4wYoaDE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OrZbYm-XouQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+  	    <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yanNNDTz40Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
+      <div class="row mt-4">
+        <div class="col-md-10">
+        <h2>Advanced Topics</h2>
+        <p>การฝึก language model มีปัญหาจุกจิกทั้งด้านการ implement (การเขียนโปรแกรมเพื่อนำเอาโมเดลไปใช้จริง) และทางด้านการเลือกโมเดล เพราะต้องรับมือกับข้อมูลขนาดใหญ่ และภาษาทุกภาษามักมีความหลากหลายสูง</p>
+        <p>จำเป็นต้องมีความรู้ความเข้าใจเรื่อง data structure ที่ใช้บ่อยใน computer science</p>
 
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QyY2loMlZeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
-	
-    <div class="row">
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3Oe4wYoaDE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
+      <div class="row">
 
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OrZbYm-XouQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p6et92WPEVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+    	    <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EW7LI8cBZ2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-	
-	<div class="row">
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yanNNDTz40Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p6et92WPEVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/feuo_fMyTCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NW1FwKKWLyY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
 	</div>
-	
-	<div class="row">
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EW7LI8cBZ2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/feuo_fMyTCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-	</div>
 
-	<div class="row">
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NW1FwKKWLyY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-	</div>
-	  
-	  
     <footer class="page-footer font-small">
       <div class="container">
         <div class="row">
