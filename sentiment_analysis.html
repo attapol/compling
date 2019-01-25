@@ -34,7 +34,12 @@
 
         <div class="col-md-7">
           <h1>Sentiment Analysis</h1>
-          <p>To be added
+          <p>การวิเคราะห์อารมณ์ความรู้สึกที่แสดงออกผ่านทางภาษา เทคโนโลยีนี้เป็นที่นิยมมากเนื่องจากข้อมูลทางด้านความคิดเห็นนั้น
+            สามารถแปลงค่าไปเป็น applications และความรู้เชิงลึก (insights) เพื่อประกอบและชี้นำการตัดสินใจ 
+          </p>
+
+          <p>เทคโนโลยีนี้อาศัย machine learning ในการเรียนรู้จากข้อมูลประกอบกับทฤษฎีทางด้านจิตวิทยา และภาษาศาสตร์การวิเคราะห์อารมณ์
+
           </p>
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L9mSaB9pgNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -42,21 +47,26 @@
 
         </div>
         <div class="col-md-3">
-          <p>Video List: </p>
+          <p>Video List: Sentiment analysis</p>
           <ol>
           	<li><a href = https://youtu.be/L9mSaB9pgNQ> Sentiment Analysis คืออะไร</a></li>
 			<li><a href = https://youtu.be/WknurtynsVs> Typology of Affect</a></li>
 			<li><a href = https://youtu.be/VzwTBDvynbQ> Linguistics and Sentiment</a></li>
 			<li><a href = https://youtu.be/ma-ldRJJUVY> Building Sentiment Analyzer</a></li>
+          </ol>
+          <p>Video List: Machine learning basics</p>
+          <ol>
 			<li><a href = https://youtu.be/L9mSaB9pgNQ> Machine Learning คืออะไร</a></li>
 			<li><a href = https://youtu.be/WknurtynsVs> 4 ขั้นตอนการใช้ Machine Learning</a></li>
 			<li><a href = https://youtu.be/VzwTBDvynbQ> Task Formulation และ Feature Engineering</a></li>
 			<li><a href = https://youtu.be/OrZbYm-XouQ> Model Training และ Evaluation</a></li>
 
           </ol>
-          <p>เนื้อหาสำหรับอ่านและอ้างอิง</p>
+          <p>เนื้อหาสำหรับอ่าน</p>
           <ul>
-            <li>To be added...</li>
+            <li><a href="slides/sentiment_analysis.pdf">Slides จาก video</a></li>
+            <li><a href="slides/sentiment_analysis_jurafsky2019.pdf">Slides จาก Jurafsky</a></li>
+            <li><a href="https://web.stanford.edu/~jurafsky/slp3/19.pdf">Chapter จาก Jurafsky</a></li>
           </ul>
           </div>
         </div>
@@ -64,28 +74,27 @@
 
       <div class="row mt-5">
         <div class="col-md-7">
-        <h2>Topic A</h2>
-        <p>To be added</p>
+        <h2>หลักทฤษฎีและหลักปฏิบัติ (Theory and practice) สำหรับการทำ Sentiment Analysis ด้วย Machine Learning</h2>
+        <p>อารมณ์แบ่งออกเป็นกี่ประเภท ประเภทของอารมณ์ช่วยให้เรา annotate ข้อมูลสำหรับ train machine learning ได้
+          อย่างรัดกุม และละเอียดขึ้น นอกจากนั้นแล้วการสร้าง sentiment analyzer ด้วย machine learning ต้องอาศัยความระมัดระวังในการ
+          แปลงข้อมูลดิบอีกด้วย
+        </p>
         </div>
       </div>
     	<div class="row mt-2">
           <div class="col-md-5">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L9mSaB9pgNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WknurtynsVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-      </div>
-      <div class="row mt-4">
         <div class="col-md-5">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VzwTBDvynbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
+
+      </div>
+      <div class="row mt-4">
   	    <div class="col-md-5">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ma-ldRJJUVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -95,8 +104,10 @@
    
       <div class="row mt-5">
         <div class="col-md-7">
-        <h2>Machine Learning</h2>
-        <p>To be added</p>
+        <h2>หลักการคิดแบบ Machine Learning</h2>
+        <p>หากไม่เคยใช้ machine learning เลยควรจะดูวิดีโอชุดนี้ machine learning เป็นเทคนิคที่สำคัญที่สุดของงานด้าน NLP ทุกด้าน supervised machine learning เป็นกระบวนการคิด
+          ที่ครอบคลุม algorithm ของ machine learning ที่ใช้กันแพร่หลายในปัจจุบันเกือบทั้งหมด
+        </p>
         </div>
       </div>
     	<div class="row mt-2">
