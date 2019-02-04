@@ -34,7 +34,8 @@
 
         <div class="col-md-7">
           <h1>Text Classification</h1>
-          <p>To be added
+          <p>โจทย์ส่วนใหญ่ของ NLP นั้นสามารถแก้ได้ด้วยการสร้างเครื่องจำแนกประเภทข้อความ (Text Classifier) ซึ่งมี machine learning algorithm เป็นแกนหลัก (สามารถศึกษาพื้นฐานของ machine learning จาก module <a href="sentiment_analysis.html">sentiment analysis</a>)
+            ปัจจุบันนี้คนหันมาใช้ Neural Network กันมากขึ้นโดยใช้พื้นฐานของความหมายของคำที่กำหนดโดยบริบทและการใช้ภาษา (Distributed semantic model หรือ distributional semantic model)ในคลังข้อมูลเป็นหลัก
           </p>
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zNy4L0NiAW8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -44,17 +45,18 @@
         <div class="col-md-3">
           <p>Video List: </p>
           <ol>
-          	<li><a href="https://youtu.be/zNy4L0NiAW8"> Text Classification คืออะไร</a></li>
-			<li><a href="https://youtu.be/YzidkwV50-c"> Logistic Regression แบบไม่ต้องเขียนสมการ</a></li>
-			<li><a href="https://youtu.be/ybLYX657iwE"> Crossentropy Loss</a></li>
-			<li><a href="https://youtu.be/kD5H0DBl5q4"> Gradient Descent</a></li>
-			<li><a href="https://youtu.be/po4FIs5jNLI"> Feedforward Neural Network</a></li>
-	
+          	<li><a href="https://youtu.be/zNy4L0NiAW8">Text Classification คืออะไร</a></li>
+      			<li><a href="https://youtu.be/YzidkwV50-c">Logistic Regression แบบไม่ต้องเขียนสมการ</a></li>
+      			<li><a href="https://youtu.be/ybLYX657iwE">Crossentropy Loss ของ Logistic Regression</a></li>
+      			<li><a href="https://youtu.be/kD5H0DBl5q4">Gradient Descent</a></li>
+      			<li><a href="https://youtu.be/po4FIs5jNLI">Feedforward Neural Network</a></li>
+
 
           </ol>
           <p>เนื้อหาสำหรับอ่านและอ้างอิง</p>
           <ul>
-            <li>To be added...</li>
+            <li><a href="slides/text_classification_part1.pdf">Slides จากวิดีโอ</a></li>
+            <li><a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf">Chapter 4 จาก Jurafsky</a></li>
           </ul>
           </div>
         </div>
@@ -62,8 +64,9 @@
 
       <div class="row mt-5">
         <div class="col-md-7">
-        <h2>Topic A</h2>
-        <p>To be added</p>
+        <h2>Deep Learning เริ่มต้นมาจาก Logistic regression</h2>
+        <p>Deep Learning หรือ Neural Network เป็นเทคโนโลยีทางด้าน machine learning คลื่นลูกใหม่ในการแก้ปัญหา NLP เพราะโมเดลนี้สามารถนำเอาธรรมชาติของคำที่มีหลายหลายมิติทางความหมายมาใช้ประโยชน์ในการจำแนกประเภทข้อความ</p>
+        <p>คณิตศาสตร์ระดับม.ปลายเป็นประโยชน์มากสำหรับการทำความเข้าใจเนื้อหาในส่วนนี้ โดยเฉพาะอย่างยิ่งการอนุพันธ์ของฟังก์ชัน (Calculus)</p>
         </div>
       </div>
     	<div class="row mt-2">
@@ -89,9 +92,36 @@
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/po4FIs5jNLI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
+        <div class="row mt-4">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0tYzmQMp8T4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
-	 
-       
+
+      <div class="row mt-5">
+        <div class="col-md-7">
+        <h2>Text classification พื้นฐานโดยใช้ scikit-learn (Python)</h2>
+        <p>scikit-learn เป็น Python package ที่มีฟังก์ชันและโมเดล machine learning ต่างๆ ไว้เพรียบพร้อม และทันสมัยอัพเดทตลอด คนที่ต้องใช้ NLP หรือ Machine learning ทุกคนควรจะเรียนรู้ไว้เป็นพื้นฐานในการทดสอบการสร้าง classifier</p>
+        <p>วิดีโอข้างล่างนี้ยกมาจากคลาส <a href="http://attapol.github.io/programming">NLP I (Programming for NLP)</a></p>
+        <ul>
+          <li><a href="https://youtu.be/gslc4zK1RRg" target="_new">วิธีการฝึกโมเดลด้วย scikit-learn</a></li>
+          <li><a href="https://youtu.be/VqfCLWZOFPw" target="_new">Feature หร็อมแหร็ม (Sparse features and sparse matrix)</a></li>
+          <li><a href="https://youtu.be/ggbIamllu3c" target="_new">Data structure: numpy array and dense matrix</a></li>
+          <li><a href="https://youtu.be/CgspAzU0nSw" target="_new">Data structure: Sparse Matrix</a></li>
+        </ul>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-7">
+        <h2>Word Embedding และ Computational Lexical Semantics</h2>
+        <p>ความหมายของคำศัพท์คำหนึ่งมีหลากหลายมิติของความหมายจนทำให้การเขียนกฏต่างๆ ในการจัดระเบียบของความหมายนั้นเป็นไปได้โดยยาก</p>
+        <p>Video coming soon</p>
+        </div>
+      </div>
+
 
 
     <footer class="page-footer font-small">
