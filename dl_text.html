@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Basics of Deep Learning</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="custom/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Basics of Deep Learning</li>
+      </ol>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row mt-5">
+
+        <div class="col-md-7">
+          <h1>Deep Learning for Text Classification</h1>
+          <p> ปัจจุบันนี้คนหันมาใช้ Neural Network กันมากขึ้นโดยใช้พื้นฐานของความหมายของคำที่กำหนดโดยบริบทและการใช้ภาษา (Distributed semantic model หรือ distributional semantic model) ในคลังข้อมูลเป็นหลัก วิดีโอชุดนี้ครอบคลุม algorithm ตั้งต้นของ neural network เพื่อเป็นพื้นฐานในการทำความเข้าใจโมเดลขั้นสูงต่อไป
+          </p>
+        </div>
+        <div class="col-md-3">
+          <p>Video List: </p>
+          <ol>
+      			<li><a href="https://youtu.be/kD5H0DBl5q4">Gradient Descent</a></li>
+      			<li><a href="https://youtu.be/po4FIs5jNLI">Feedforward Neural Network</a></li>
+            <li><a href="https://youtu.be/Jpaiey9kBKQ">Computational Lexical Semantics</a></li>
+            <li><a href="https://youtu.be/OcG-sfMa0oI">Distributional Semantic Model</a></li>
+            <li><a href="https://youtu.be/1juBMC8zjQc">Skipgram Model (word2vec)</a></li>
+            <li><a href="https://youtu.be/_6cMYyg88n4">การประเมินประสิทธิภาพของ Word embedding</a></li>
+            <li><a href="https://youtu.be/pxXhG6rBa4o">Neural Bag-of-Word Model</a></li>
+            <li><a href="https://youtu.be/R9NKLc-pdH8">Model Word Embedding Models</a></li>
+          </ol>
+          <p>เนื้อหาสำหรับอ่านและอ้างอิง</p>
+          <ul>
+            <li><a href="slides/word_embedding_classifier.pdf">Slides จากวิดีโอเรื่อง Word embedding และ Neural Bag-of-word model</a></li>
+            <li><a href="https://web.stanford.edu/~jurafsky/slp3/6.pdf">Chapter 6 จาก Jurafsky</a></li>
+            <li><a href="https://web.stanford.edu/~jurafsky/slp3/7.pdf">Chapter 7 จาก Jurafsky</a></li>
+          </ul>
+          </div>
+        </div>
+
+
+      <div class="row mt-5">
+        <div class="col-md-7">
+        <h2>Deep Learning เริ่มต้นมาจาก Logistic regression</h2>
+        <p>Deep Learning หรือ Neural Network เป็นเทคโนโลยีทางด้าน machine learning คลื่นลูกใหม่ในการแก้ปัญหา NLP เพราะโมเดลนี้สามารถนำเอาธรรมชาติของคำที่มีหลายหลายมิติทางความหมายมาใช้ประโยชน์ในการจำแนกประเภทข้อความ</p>
+        <p>คณิตศาสตร์ระดับม.ปลายเป็นประโยชน์มากสำหรับการทำความเข้าใจเนื้อหาในส่วนนี้ โดยเฉพาะอย่างยิ่งการอนุพันธ์ของฟังก์ชัน (Calculus)</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kD5H0DBl5q4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+  	    <div class="col-md-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/po4FIs5jNLI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-7">
+        <h2>Word Embedding และ Computational Lexical Semantics</h2>
+        <p>ความหมายของคำศัพท์คำหนึ่งมีหลากหลายมิติของความหมายจนทำให้การเขียนกฏต่างๆ ในการจัดระเบียบของความหมายนั้นเป็นไปได้โดยยาก Word embedding เก็บลักษณะเฉพาะทางความหมายของแต่ละคำโดยเรียนรู้จากคลังข้อมูล และเป็นพื้นฐานของการสร้าง Text classifier ตัวใหม่ๆ ในปัจจุบัน</p>
+        </div>
+      </div>
+	  <div class="row mt-2">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Jpaiey9kBKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OcG-sfMa0oI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+      </div>
+	  <div class="row mt-2">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1juBMC8zjQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_6cMYyg88n4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+      </div>
+	  <div class="row mt-5">
+        <div class="col-md-7">
+        <h2>Deep Learning for Text Classification</h2>
+        <p>Deep Averaging Network เป็นโมเดล baseline ในการทำความเข้าใจและพัฒนา neural model architecture อื่นๆ ที่จะพบเห็นในบทต่อๆ ไปเช่น 
+        recurrent neural network และ sequence-to-sequence models</p>
+        </div>
+      </div>
+	  <div class="row mt-2">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pxXhG6rBa4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R9NKLc-pdH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+      </div>
+
+
+    <footer class="page-footer font-small">
+      <div class="container">
+        <div class="row">
+             <div class="col-md-12 py-3">
+                  <div class="flex-center">
+                    <hr/>
+                  </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-right py-3 mb-5">© 2018-2019 Copyright: Attapol Thamrongrattanarit</div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

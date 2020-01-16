@@ -49,16 +49,6 @@
           	<li><a href="https://youtu.be/zNy4L0NiAW8">Text Classification คืออะไร</a></li>
       			<li><a href="https://youtu.be/YzidkwV50-c">Logistic Regression แบบไม่ต้องเขียนสมการ</a></li>
       			<li><a href="https://youtu.be/ybLYX657iwE">Crossentropy Loss ของ Logistic Regression</a></li>
-      			<li><a href="https://youtu.be/kD5H0DBl5q4">Gradient Descent</a></li>
-      			<li><a href="https://youtu.be/po4FIs5jNLI">Feedforward Neural Network</a></li>
-				<li><a href="https://youtu.be/Jpaiey9kBKQ">Computational Lexical Semantics</a></li>
-				<li><a href="https://youtu.be/OcG-sfMa0oI">Distributional Semantic Model</a></li>
-				<li><a href="https://youtu.be/1juBMC8zjQc">Skipgram Model (word2vec)</a></li>
-				<li><a href="https://youtu.be/_6cMYyg88n4">การประเมินประสิทธิภาพของ Word embedding</a></li>
-				<li><a href="https://youtu.be/pxXhG6rBa4o">Neural Bag-of-Word Model</a></li>
-				<li><a href="https://youtu.be/R9NKLc-pdH8">Model Word Embedding Models</a></li>
-
-
           </ol>
           <p>เนื้อหาสำหรับอ่านและอ้างอิง</p>
           <ul>
@@ -66,112 +56,66 @@
             <li><a href="slides/word_embedding_classifier.pdf">Slides จากวิดีโอเรื่อง Word embedding และ Neural Bag-of-word model</a></li>
             <li><a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf">Chapter 4 จาก Jurafsky</a></li>
             <li><a href="https://web.stanford.edu/~jurafsky/slp3/5.pdf">Chapter 5 จาก Jurafsky</a></li>
-            <li><a href="https://web.stanford.edu/~jurafsky/slp3/6.pdf">Chapter 6 จาก Jurafsky</a></li>
           </ul>
           </div>
         </div>
 
-
       <div class="row mt-5">
         <div class="col-md-7">
-        <h2>Deep Learning เริ่มต้นมาจาก Logistic regression</h2>
-        <p>Deep Learning หรือ Neural Network เป็นเทคโนโลยีทางด้าน machine learning คลื่นลูกใหม่ในการแก้ปัญหา NLP เพราะโมเดลนี้สามารถนำเอาธรรมชาติของคำที่มีหลายหลายมิติทางความหมายมาใช้ประโยชน์ในการจำแนกประเภทข้อความ</p>
-        <p>คณิตศาสตร์ระดับม.ปลายเป็นประโยชน์มากสำหรับการทำความเข้าใจเนื้อหาในส่วนนี้ โดยเฉพาะอย่างยิ่งการอนุพันธ์ของฟังก์ชัน (Calculus)</p>
+        <h2>Logistic regression</h2>
+        <p>Logistic Regression นับว่าเป็น machine learning model ที่สำคัญที่สุด เพราะไม่ต้องปรับจูนเยอะและสามารถพัฒนามาประยุกต์ใช้ได้อย่างรวดเร็ว
+        และมีประสิทธิภาพพอสมควรโดยไม่ต้องลงแรงมาก</p>
         </div>
-      </div>
-    	<div class="row mt-2">
-          <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YzidkwV50-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ybLYX657iwE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
       </div>
       <div class="row mt-4">
         <div class="col-md-5">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kD5H0DBl5q4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YzidkwV50-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
   	    <div class="col-md-5">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/po4FIs5jNLI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0tYzmQMp8T4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ybLYX657iwE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
 
       <div class="row mt-5">
         <div class="col-md-7">
-        <h2>Text classification พื้นฐานโดยใช้ scikit-learn (Python)</h2>
-        <p>scikit-learn เป็น Python package ที่มีฟังก์ชันและโมเดล machine learning ต่างๆ ไว้เพรียบพร้อม และทันสมัยอัพเดทตลอด คนที่ต้องใช้ NLP หรือ Machine learning ทุกคนควรจะเรียนรู้ไว้เป็นพื้นฐานในการทดสอบการสร้าง classifier</p>
-        <p>วิดีโอข้างล่างนี้ยกมาจากคลาส <a href="http://attapol.github.io/programming">NLP I (Programming for NLP)</a></p>
-        <ul>
-          <li><a href="https://youtu.be/gslc4zK1RRg" target="_new">วิธีการฝึกโมเดลด้วย scikit-learn</a></li>
-          <li><a href="https://youtu.be/VqfCLWZOFPw" target="_new">Feature หร็อมแหร็ม (Sparse features and sparse matrix)</a></li>
-          <li><a href="https://youtu.be/ggbIamllu3c" target="_new">Data structure: numpy array and dense matrix</a></li>
-          <li><a href="https://youtu.be/CgspAzU0nSw" target="_new">Data structure: Sparse Matrix</a></li>
-        </ul>
+          <h2>Text classification พื้นฐานโดยใช้ scikit-learn (Python)</h2>
+          <p>scikit-learn เป็น Python package ที่มีฟังก์ชันและโมเดล machine learning ต่างๆ ไว้เพรียบพร้อม และทันสมัยอัพเดทตลอด คนที่ต้องใช้ NLP หรือ Machine learning ทุกคนควรจะเรียนรู้ไว้เป็นพื้นฐานในการทดสอบการสร้าง classifier</p>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-7">
-        <h2>Word Embedding และ Computational Lexical Semantics</h2>
-        <p>ความหมายของคำศัพท์คำหนึ่งมีหลากหลายมิติของความหมายจนทำให้การเขียนกฏต่างๆ ในการจัดระเบียบของความหมายนั้นเป็นไปได้โดยยาก Word embedding เก็บลักษณะเฉพาะทางความหมายของแต่ละคำโดยเรียนรู้จากคลังข้อมูล และเป็นพื้นฐานของการสร้าง Text classifier ตัวใหม่ๆ ในปัจจุบัน</p>
+      <div class="row mt-4">
+        <div class="col-md-5">
+          วิธีการฝึกโมเดลด้วย scikit-learn
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gslc4zK1RRg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+  	    <div class="col-md-5">
+          Sparse features and sparse matrix
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VqfCLWZOFPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-	  <div class="row mt-2">
-          <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Jpaiey9kBKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+
+      <div class="row mt-4">
+        <div class="col-md-5">
+          Data structure: numpy array and dense matrix
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ggbIamllu3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OcG-sfMa0oI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+        </div>
+  	    <div class="col-md-5">
+          Data structure: Sparse Matrix
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CgspAzU0nSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-      </div>
-	  <div class="row mt-2">
-          <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1juBMC8zjQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_6cMYyg88n4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-      </div>
-	  <div class="row mt-5">
-        <div class="col-md-7">
-        <h2>Deep learning for text classification</h2>
-        <p>Deep learning เป็น algorithm ที่สำคัญมาก และมาแรงมากที่สุดในขณะนี้ในการสร้าง Text classifier </p>
         </div>
       </div>
-	  <div class="row mt-2">
-          <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pxXhG6rBa4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R9NKLc-pdH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-      </div>
+
 
 
     <footer class="page-footer font-small">
