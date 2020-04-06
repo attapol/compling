@@ -1,0 +1,133 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Recurrent Neural Network</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="custom/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Recurrent Neural Network</li>
+      </ol>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row mt-5">
+
+        <div class="col-md-7">
+          <h1>Recurrent Neural Network</h1>
+          <p>Sequence tagging model สมัยใหม่มักจะใช้ Recurrent Neural Network เป็นฐานสำคัญ
+          เพราะโมเดลนี้สามารถรวบรวมบริบทจากคำรอบ ๆ มาเป็น feature ในการช่วย tag ได้
+          ก่อนวิดีโอชุดนี้ควรมีความรู้เรื่อง <a href="dl_text.html">Neural Network พื้นฐาน</a>
+          </p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Sjt4Jezu-Fk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <p>Video List: </p>
+          <ol>
+            <li><a href="https://youtu.be/Sjt4Jezu-Fk">RNN Model</a></li>
+            <li><a href="https://youtu.be/vDGVOkE0dKg">การฝึกโมเดล RNN</a></li>
+            <li><a href="https://youtu.be/cmcvtM1I0tQ">Gated Recurrent Unit (GRU) + LSTM</a></li>
+            <li><a href="https://youtu.be/eFxAR_J97Zw">Bidirectional RNN</a></li>
+            <li><a href="https://youtu.be/M-qTMPvAm50">BiLSTM-CRF vs CRF</a></li>
+          </ol>
+          <p>Slides</p>
+          <ul>
+            <li><a href="slides/rnn.pdf">Slides เรื่อง RNN จากวิดีโอ</a></li>
+          </ul>
+        </div>
+      </div>
+
+	  	<div class="row mt-5">
+        <div class="col-md-7">
+          <h2>โมเดลต่างๆ ในตระกูล RNN</h2>
+          <p>Gated Recurrent Unit (GRU) และ Long Short-Term Memory (LSTM) เป็นโมเดลตระกูล RNN
+          ที่สามารถถูกเทรนได้ง่ายกว่า และได้ประสิทธิภาพที่ดีกว่า RNN แบบตัวพื้นฐาน โมเดลเหล่านี้มักถูกนำมาผสมกับ 
+          Conditional Random Fields (CRF) เพื่อให้ label ของแต่ละคำมีความเกี่ยวเนื่องสอดคล้องกัน
+          </p>
+        </div>
+      </div>
+      <div class="row mt-4">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vDGVOkE0dKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cmcvtM1I0tQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+      </div>
+      <div class="row mt-4">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eFxAR_J97Zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M-qTMPvAm50" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+      </div>
+	  
+	  	<div class="row mt-5">
+		      <p>สามารถเรียนรู้รายละเอียดทางคณิตศาสตร์ของโมเดลตระกูลนี้ได้จากวิดีโอข้างล่าง</p>
+          <p>Video ที่แนะนำให้ดูนำมาจากอาจารย์ Andrew Ng (เป็นภาษาอังกฤษ)</p>
+          <ul>
+            <li><a href="https://youtu.be/2E65LDnM2cA">RNN Model</a></li>
+            <li><a href="https://youtu.be/esgbmJ6SnSY">Backpropagation Through Time</a></li>
+            <li><a href="https://youtu.be/3Hn_hEPtciQ">Vanishing Gradients</a></li>
+            <li><a href="https://youtu.be/xSCy3q2ts44">Gated Recurrent Unit (GRU)</a></li>
+            <li><a href="https://youtu.be/5wh4HWWfZIY">Long Short Term Memory (LSTM)</a></li>
+            <li><a href="https://youtu.be/bTXGpATdKRY">Bidirectional RNN</a></li>
+            <li><a href="https://youtu.be/U7wN1x8zsG8">Deep RNNs</a></li>
+          </ul>
+      </div>
+	
+	  
+    <footer class="page-footer font-small">
+      <div class="container">
+        <div class="row">
+             <div class="col-md-12 py-3">
+                  <div class="flex-center">
+                    <hr/>
+                  </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-right py-3 mb-5">© 2021 Copyright: Attapol Thamrongrattanarit</div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
