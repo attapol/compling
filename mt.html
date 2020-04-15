@@ -1,0 +1,141 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Machine Translation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="custom/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Machine Translation</li>
+      </ol>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row mt-5">
+
+        <div class="col-md-7">
+          <h1>Machine Translation</h1>
+          <p>การสร้างเครื่องแปลภาษาเป็นโจทย์ classic ของ NLP และสามารถนำไปใช้ประโยชน์ได้โดยตรงโดยตัวของมันเอง 
+          โจทย์นี้จัดว่าเป็นโจทย์ที่ยากที่สุดของ NLP เพราะต้องอาศัยความเข้าใจของภาษาในระดับที่ลึกซึ้งทำให้โมเดลที่ต้องใช้ต้องมีความซับซ้อนตามไปด้วย
+          </p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nMJSsMKH6po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <p>Video List: </p>
+          <ol>
+          	<li><a href="https://youtu.be/nMJSsMKH6po">MT ทำงานยังไง</a></li>
+            <li><a href="https://youtu.be/Zrtxuq1hsw4">Parallel corpus</a></li>
+            <li><a href="https://youtu.be/bdr7b42LtG0">Statistical Machine Translation</a></li>
+            <li><a href="https://youtu.be/O51f7ipA01o">Word Alignment for SMT</a></li>
+            <li><a href="https://youtu.be/LLmEHdHgYyI">Phrase-based Machine Translation</li>
+            <li><a href="https://youtu.be/KCp_QdEBYEw">Beam Search Decoding</a></li>
+            <li><a href="https://youtu.be/AYqfX4mgD_4">การประเมินผลการแปลด้วยเครื่อง</a></li>
+          </ol>
+          <p>Slides</p>
+          <ul>
+            <li><a href="slides/machine-translation-2020.pdf">Slides จากวิดีโอ</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="row mt-5">
+        <div class="col-md-7">
+        <h2>Statistical Machine Translation</h2>
+        <p>ปัจจุบันเราไม่ใช้ Statistical Machine Translation (SMT) แต่ไอเดียหลักๆ ของ SMT
+        นั้นยังคงเป็นหลักการสำคัญ ๆ ในการสร้างโมเดลสมัยใหม่อย่าง Neural Machine Translation (NMT) 
+        </p>
+
+        <p>การเรียนโมดูลนี้จำเป็นต้องเข้าใจ <a href="language_model.html">Language Modeling</a> </p>
+        </div>
+      </div>
+    	<div class="row mt-2">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Zrtxuq1hsw4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+		  <div class="col-md-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bdr7b42LtG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    	<div class="row mt-2">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/O51f7ipA01o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+		  <div class="col-md-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LLmEHdHgYyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+	
+	<div class="row mt-5">
+        <div class="col-md-7">
+        <h2>Decoding and Evaluation</h2>
+        <p>Decoding เป็นกระบวนการนำ translation model และ language model ไปใช้ในการแปลจริงซึ่งต่างจากตอน train โมเดล</p>
+        </div>
+      </div>
+	  <div class="row mt-4">
+  	    <div class="col-md-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KCp_QdEBYEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+  	    <div class="col-md-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AYqfX4mgD_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+	  
+
+    <footer class="page-footer font-small">
+      <div class="container">
+        <div class="row">
+             <div class="col-md-12 py-3">
+                  <div class="flex-center">
+                    <hr/>
+                  </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-right py-3 mb-5">© 2020 Copyright: Attapol Thamrongrattanarit</div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
