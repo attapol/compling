@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Basics of Deep Learning</title>
+    <title>Deep Learning for Text Classification</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,24 +35,15 @@
 
         <div class="col-md-7">
           <h1>Deep Learning for Text Classification</h1>
-          <p> ปัจจุบันนี้คนหันมาใช้ Neural Network กันมากขึ้นโดยใช้พื้นฐานของความหมายของคำที่กำหนดโดยบริบทและการใช้ภาษา (Distributed semantic model หรือ distributional semantic model) ในคลังข้อมูลเป็นหลัก วิดีโอชุดนี้ครอบคลุม algorithm ตั้งต้นของ neural network เพื่อเป็นพื้นฐานในการทำความเข้าใจโมเดลขั้นสูงต่อไป
+          <p> ปัจจุบันนี้คนหันมาใช้ Deep Learning model กันมากขึ้นโดยใช้พื้นฐานของความหมายของคำที่กำหนดโดยบริบทและการใช้ภาษา (Distributed semantic model หรือ distributional semantic model) ในคลังข้อมูลเป็นหลัก วิดีโอชุดนี้ครอบคลุมวิธีการเทรนโมเดล Deep Learning และรายละเอียดของโมเดล Deep Averaging Network และ Convolutional Neural Network 
           </p>
         </div>
         <div class="col-md-3">
-          <p>Video List: </p>
-          <ol>
-      			<li><a href="https://youtu.be/kD5H0DBl5q4">Gradient Descent</a></li>
-      			<li><a href="https://youtu.be/po4FIs5jNLI">Feedforward Neural Network</a></li>
-            <li><a href="https://youtu.be/Jpaiey9kBKQ">Computational Lexical Semantics</a></li>
-            <li><a href="https://youtu.be/OcG-sfMa0oI">Distributional Semantic Model</a></li>
-            <li><a href="https://youtu.be/1juBMC8zjQc">Skipgram Model (word2vec)</a></li>
-            <li><a href="https://youtu.be/_6cMYyg88n4">การประเมินประสิทธิภาพของ Word embedding</a></li>
-            <li><a href="https://youtu.be/pxXhG6rBa4o">Neural Bag-of-Word Model</a></li>
-            <li><a href="https://youtu.be/R9NKLc-pdH8">Other Word Embedding Models</a></li>
-          </ol>
-          <p>เนื้อหาสำหรับอ่านและอ้างอิง</p>
+          <p>Slides และแหล่งอ้างอิง</p>
           <ul>
             <li><a href="slides/word_embedding_classifier.pdf">Slides จากวิดีโอเรื่อง Word embedding และ Neural Bag-of-word model</a></li>
+            <li><a href="slides/training_dl.pdf">Slides จากวิดีโอเรื่องการเทรน deep learning model</a></li>
+            <li><a href="slides/CNN_technical.pdf">Slides จากวิดีโอเรื่อง CNN</a></li>
             <li><a href="https://web.stanford.edu/~jurafsky/slp3/6.pdf">Chapter 6 จาก Jurafsky</a></li>
             <li><a href="https://web.stanford.edu/~jurafsky/slp3/7.pdf">Chapter 7 จาก Jurafsky</a></li>
           </ul>
@@ -110,9 +101,18 @@
             </div>
           </div>
       </div>
+
+	  <div class="row mt-2">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R9NKLc-pdH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+    </div>
+
 	  <div class="row mt-5">
         <div class="col-md-7">
-        <h2>Deep Learning for Text Classification</h2>
+        <h2>Training Deep Learning Models</h2>
         <p>Deep Averaging Network เป็นโมเดล baseline ในการทำความเข้าใจและพัฒนา neural model architecture อื่นๆ ที่จะพบเห็นในบทต่อๆ ไปเช่น 
         recurrent neural network และ sequence-to-sequence models</p>
         </div>
@@ -125,10 +125,51 @@
           </div>
           <div class="col-md-5">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R9NKLc-pdH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cxZh-F4WjYQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
+    </div>
+
+	  <div class="row mt-2">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0ZmfyFwDs6Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9WtJgNAtAhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+    </div>
+
+	  <div class="row mt-5">
+        <div class="col-md-7">
+        <h2>Convolutional Neural Network</h2>
+        <p>Convolutional Neural Network (CNN) เป็นโมเดลที่ใช้กันอย่างแพร่หลายในการทำ text classification 
+        เพราะว่ามีขนาดเล็ก เทรนไม่ยาก และประกอบรวมพลังกับ word embedding ได้อย่างดี
+        </p>
+        </div>
       </div>
+	  <div class="row mt-2">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vhjoVCE18jc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vjLIq5w_yaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+    </div>
+	  <div class="row mt-2">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JJP5a1WcTVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+    </div>
 
 
     <footer class="page-footer font-small">
