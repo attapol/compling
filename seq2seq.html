@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sequence-to-Sequence model</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="custom/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Sequence-to-sequence model </li>
+      </ol>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row mt-5">
+
+        <div class="col-md-7">
+          <h1>Sequence-to-Sequence Model</h1>
+          <p>โมเดลประเภทนี้มีไว้สำหรับการรับ input ที่เป็น text และให้ output กลับไปเป็น text เช่นกัน
+          เป็นโมเดลที่นำมาประยุกต์ใช้ Machine Translation แล้วได้ผลดีที่สุด และไม่ต้องพึ่งพาระบบที่มีหลายส่วนประกอบย่อย ๆ
+          </p>
+
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GiLQLqBnATs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+
+          <p>Video List</p>
+          <ol>
+			<li><a href ="https://youtu.be/GiLQLqBnATs">Sequence-to-sequence model คืออะไร</a></li>
+			<li><a href ="https://youtu.be/3H7uDLR1fz4">RNN Language Model</a></li>
+			<li><a href ="https://youtu.be/DZEs6jyhrQs">Conditional Language Model</a></li>
+			<li><a href ="https://youtu.be/dRJ9f2TxzdE">Encoder-decoder Model</a></li>
+      <li><a href ="https://youtu.be/7XbzJClYtLg">Attention mechanism</a></li>
+      <li><a href ="https://youtu.be/40BrPBHNMB8">การคำนวณ attention</a></li>
+          </ol>
+
+          </div>
+        </div>
+
+
+      <div class="row mt-5">
+        <div class="col-md-7">
+        <h2>Conditional Language Model</h2>
+        <p>Sequence-to-sequece model ประกอบด้วยไอเดียที่สำคัญ 2 อย่าง 1) Neural Language Model ซึ่งสามารถ generate text ออกมาตาม context
+          จากนั้นทำให้เจาะจงมากขึ้นโดยการใช้ 2) Conditional Language Model ที่ทำให้โมเดลใช้ตัวแปรอื่นๆ ในการควบคุม text output ได้
+          แต่ว่าโมเดลเหล่านี้มักมีปัญหาเมื่อพบประโยคที่ยาว ๆ มาเป็น context
+        </p>
+        </div>
+      </div>
+    	<div class="row mt-2">
+
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3H7uDLR1fz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DZEs6jyhrQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+      <div class="row mt-4">
+
+  	    <div class="col-md-5">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dRJ9f2TxzdE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-7">
+        <h2>Attention Mechanism</h2>
+        <p> โมเดลเหล่านี้มักมีปัญหาเมื่อพบประโยคที่ยาว ๆ มาเป็น context เพราะว่าลำพัง Neural Language Model อย่างเดียวจะไม่สามารถเข้าถึงความหมายเฉพาะส่วนของประโยคได้ดีพอ
+        จึงต้องใช้ Attention Mechanism เข้ามาช่วยในการเลือกส่วนของประโยคที่จะให้ความสนใจเพื่อนำไปเป็น feature ในการ generate text output
+        </p>
+        </div>
+      </div>
+    	<div class="row mt-2">
+          <div class="col-md-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7XbzJClYtLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/40BrPBHNMB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+
+
+
+
+    <footer class="page-footer font-small">
+      <div class="container">
+        <div class="row">
+             <div class="col-md-12 py-3">
+                  <div class="flex-center">
+                    <hr/>
+                  </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-right py-3 mb-5">© 2021 Copyright: Attapol Thamrongrattanarit</div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
